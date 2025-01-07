@@ -1,7 +1,7 @@
 # 👋 Hi, I’m Nachiket Prajapati (Nick)
 
 - 🎓 I recently completed my studies in **Artificial Intelligence and Data Analytics** and **Project Management** from Saskatchewan Polytechnic.
-- 💻 I'm a **Data Engineer** with hands-on experience in designing scalable data solutions, building ETL pipelines, and implementing cloud-based architectures.
+- 💻 I'm a **Data Engineer & ML Engineer** with hands-on experience in designing scalable data solutions, building ETL pipelines, and implementing cloud-based architectures.
 - 🌟 I hold certifications in:
   - **Microsoft Azure Data Engineer Associate**
   - **Microsoft Azure Data Fundamentals**
