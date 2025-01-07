@@ -1,0 +1,201 @@
+ClaimID,items,Diagnosis,Provider,Country,ServiceDate
+005b207a-2b82-4ffa-b126-4bc108019020,A314,Hypertension,Lawrence-Scott,United States,2024-07-08
+0238cc3f-d6e4-4cdd-b592-752a4af5f02a,A216,Dental Cleaning,Mcdaniel Group,USA,2020-08-15
+04baaf1e-2f21-4818-80d0-368853c31234,A759,Dental Cleaning,"Bryant, Price and Morgan",USA,2024-02-14
+0894ac8b-893e-4e26-b343-8ac1c393e3eb,A586,Hypertension,"Gordon, Serrano and Oconnor",United States,2023-01-04
+0a168855-700c-485a-841c-db1a73ad24b0,A984,Hypertension,Li-James,USA,2020-01-03
+0b010b6c-1dbb-41a8-9869-118411ca877b,A816,Fracture,Davis-Smith,USA,2024-09-06
+0c144c1f-947f-437b-be33-e2b141a73da6,A961,Hypertension,"Wong, Moore and Lee",US,2020-07-27
+0d923eba-c4aa-4a02-93d1-a0641d4adbd0,A464,Hypertension,"Taylor, French and Campbell",US,2022-11-19
+0ee3fcba-5e09-40f8-9f57-be5403130a87,A749,Diabetes,Spears Inc,United States,2023-05-19
+0faca957-7fd7-462a-ab72-6d90f8267b0e,A338,Hypertension,Morris-Watson,United States,2023-06-08
+11f1d790-e896-4d68-8241-0a4c914a9914,A129,Dental Cleaning,"Smith, Spears and Becker",USA,2023-01-23
+133968ec-8a7f-4ab4-9141-5d9796380934,A394,Fracture,Smith Inc,US,2020-09-26
+138e1e7a-ea2f-488d-89e5-dfa968b394aa,A8b,Fracture,Silva PLC,United States,2020-03-02
+1754ebbc-2d49-4cad-a6b1-c8692ba26cc5,A911,Dental Cleaning,Ingram PLC,USA,2024-07-24
+184fc5c3-5e09-430c-984e-753ad18d2f4b,A892,Hypertension,Rose Group,US,2021-08-23
+18bf2319-b0ec-4458-abcc-1c7e47cdac17,A177,Diabetes,Wilson Ltd,United States,2021-10-19
+1927bc62-7394-44c0-81c2-765dcfa5ab53,A7K,Diabetes,Baker and Sons,United States,2021-08-23
+1c0dc294-a44f-407f-8f4a-289e357fd1ae,A297,Dental Cleaning,Allen Inc,USA,2021-09-26
+1c6ef00d-e323-45c5-b2bd-b1a360f0653c,A660,Dental Cleaning,Mays and Sons,US,2020-03-30
+1d02f4d5-852c-45fe-961b-6d81f911dde9,A743,Hypertension,Bush-Chavez,Us,2023-01-05
+1db68c6a-fd80-43d6-b6a4-a69201647ad7,A466,Diabetes,"Wright, Walsh and Clark",USA,2023-12-15
+205b2081-8fc4-4fca-af74-616371adb11a,A698,Fracture,"Clark, Boyd and Morrison",United States,2023-07-02
+206e2a3d-d5a6-4fc6-9856-deb99ae8fc12,A1Y,Hypertension,"Delgado, Bailey and Holmes",USA,2021-10-03
+2158174c-c7c4-4d15-b3ea-e08121e96c62,A463,Dental Cleaning,Perry-Brown,USA,2023-02-03
+22936a77-c01a-401c-8269-a3c056c4aeb1,A267,Diabetes,"Rivera, Perry and Kim",United States,2023-01-22
+2326c4d1-2437-4fd2-9bb4-2e6006e7f33e,A191,Diabetes,Cardenas-Hubbard,Ur,2021-11-23
+23559ce2-a3a3-48ce-8f80-949a03305bb0,A624,Fracture,Krause Inc,United States,2022-07-27
+23f93b14-a86f-47ae-9761-28a419011060,A386,Dental Cleaning,"Alvarado, Martinez and Owens",United States,2023-11-14
+24e2cc1a-a8c9-46e9-b1a1-ca2be3ec8d55,A427,Fracture,Martinez-Ashley,United States,2020-08-29
+2716d301-a3ac-4a96-8b86-059f254c4721,A1d,Dental Cleaning,Acosta-Hicks,United States,2024-04-13
+273d82d3-475a-4cbc-b599-c55d72b705a2,A346,Hypertension,"Tanner, Hodge and Jones",USA,2024-02-04
+29efd49a-bfc4-40f1-a0d2-c6656eb8c928,A570,Diabetes,Watts LLC,USA,2022-10-24
+2a5b6498-090f-4f35-b398-bf7604249d65,A591,Diabetes,Freeman and Sons,USA,2021-07-09
+2b3309b7-0304-448c-8216-d55b79624c14,A533,Fracture,Wright-Duncan,USA,2022-12-21
+2cde66ce-0108-4c6b-8a32-435a8e34e259,A947,Fracture,Thomas-Garcia,USA,2022-01-10
+2ce1b527-e6c4-4264-b71b-076540201f26,A465,Diabetes,"Mccoy, Green and Cohen",USA,2023-10-21
+2e5b9ab0-3981-4e82-8e29-a665c685f2e0,A671,Hypertension,"Warren, Lopez and Carey",USA,2021-12-08
+355e1bc3-8a7b-4ab2-9856-649f3e5ba9fc,A570,Diabetes,"Wallace, Novak and Hurley",United States,2020-05-21
+35627479-a9d4-4b73-a519-8bb3e270ab7a,A905,Diabetes,Young Inc,United States,2021-11-23
+35e9cd67-9be3-46bf-ba83-ca90e1beb01e,A877,Hypertension,"Hamilton, Howard and Myers",USA,2024-04-06
+381b0616-dd7b-41d3-b138-d9c4948d85bb,A6j,Dental Cleaning,Fletcher-Smith,US,2022-02-15
+38940089-de80-4b51-be89-27c9169b7438,A978,Diabetes,Chavez-Perry,USA,2023-02-12
+391cc417-54d0-4f1c-be16-c6ff28c10487,A717,Dental Cleaning,Acosta-Rodriguez,US,2022-12-07
+3994a7ba-a535-4aab-a19f-511cd8575cba,A415,Fracture,Harvey and Sons,United States,2022-09-21
+39d84ef5-0c8c-4cb0-9fbf-d1c0240ef7a5,A206,Diabetes,Knox Inc,USA,2020-10-21
+39f8139d-1fc6-48cd-a09d-0af88b706c69,A7J,Fracture,Riley-Young,United States,2024-02-04
+3d76f558-a28d-43f9-875c-023edfaeb92b,A2B,Dental Cleaning,Salazar-Castro,United States,2021-05-23
+3ee2f9f8-180d-4308-8ad8-f76a3696cdad,A151,Fracture,Delgado-Murray,US,2020-08-18
+3f0cd344-1cdc-474d-86c0-ccd4c96b09a4,A1f,Diabetes,Green and Sons,United States,2021-09-01
+3fa740aa-585f-4104-86e5-7352881d5263,A247,Fracture,Martin-Hancock,United States,2023-07-31
+40d68264-d750-4378-a3d6-0c92b5d8675f,A591,Dental Cleaning,"Elliott, Andrews and Rodriguez",United States,2021-08-12
+40e9ce7d-5f2f-42d7-82ae-e421687f7de0,A957,Dental Cleaning,Hendricks LLC,US,2020-08-08
+42c20e88-8e79-4945-8dbf-f7fd95a697dd,A682,Dental Cleaning,"Miles, Nelson and Johnson",United States,2021-04-02
+42c6f6a7-e563-4f81-93ec-2366664055cb,A4b,Hypertension,"Kline, Carpenter and Castro",Unitedw,2024-03-13
+43ba6ae3-c89b-4eba-ab97-be1210102418,A443,Dental Cleaning,"Davis, Stone and Russell",USA,2020-06-23
+46afd194-b681-46f4-a0e2-05ed598880f0,A865,Fracture,"Munoz, Gonzales and Lawrence",US,2023-05-20
+47b447f8-a2d3-452e-b315-6f90f212b7ee,A127,Diabetes,Watson Group,United States,2022-05-23
+4940e228-864f-4267-b7f6-39230d9d10d9,A108,Dental Cleaning,Walker and Sons,USA,2024-03-15
+49836ef8-12b1-414a-b93b-e1e0aee1efca,A734,Fracture,Peters-Macias,US,2022-12-31
+4ac06c8e-0eec-4341-b121-f1eaad8a57bc,A990,Hypertension,"Walton, Tapia and Black",USA,2020-04-13
+4da67b53-cb64-4ce9-be0a-cdba42e3444b,A345,Diabetes,"Williams, King and Jones",US,2023-12-01
+4fcce5cd-eec6-4102-b5c4-206ead6aecd8,A581,Dental Cleaning,"Hendrix, Meyers and Jones",UY,2023-10-18
+502abce7-4acd-4722-990d-2978f9257d67,A6P,Hypertension,Hill PLC,USA,2023-12-05
+5291cc03-5707-4c62-b2f4-62a050cc0827,A650,Dental Cleaning,"Anderson, Collins and Lester",USA,2022-03-05
+52d5d904-75f2-4831-8790-7e1223713cba,A636,Hypertension,"Rogers, Lee and Hawkins",United States,2024-03-09
+55019908-1b98-420b-9199-dbbb25d023ff,A876,Dental Cleaning,"Silva, Wolfe and Gill",UI,2020-07-11
+5771bd80-4613-4fa7-b4d3-20748187b283,A648,Hypertension,Hill-Griffin,US,2023-05-05
+5d345dd5-a46b-4a66-835e-c0b4f108d77c,A783,Diabetes,"Long, Ellis and Patel",United States,2024-09-27
+61a45d9c-0d06-4927-9ec3-9cf90d7db511,A160,Dental Cleaning,"Olson, Smith and Davis",United States,2022-10-18
+61c81d96-d63f-4467-829a-e4d9d556ddfb,A745,Fracture,"Allen, Rodriguez and Edwards",US,2023-01-20
+62b16d42-f911-4057-98a0-03196b18b38a,A276,Hypertension,Maldonado-Malone,US,2023-12-10
+65dd8725-d510-4f7a-8fe6-7a701150bb34,A402,Fracture,Jones-Freeman,USA,2023-10-04
+68be3b02-b8bd-44c7-b672-7c6d2135e852,A126,Hypertension,"Baker, Chan and Harvey",USA,2021-04-29
+69d18864-8f02-4b0f-b21e-a019778783f8,A483,Fracture,Jarvis-Wiggins,USA,2021-11-22
+6a934a23-eba5-4272-bada-17ad577fdcc8,A139,Dental Cleaning,Aguilar and Sons,United States,2022-09-18
+6acfa828-37e6-4f59-b537-6a93efa63605,A927,Hypertension,Mcdonald PLC,US,2023-11-21
+6b5df431-5fc5-4e6a-8c63-d357832dd0da,A800,Dental Cleaning,Brooks-Wilson,US,2023-06-30
+6c15b468-e0b9-4d2c-b89d-ecde6237d1dc,A889,Diabetes,Brock-Butler,USA,2021-05-28
+6e4e126a-bd8c-4a37-af2c-62704e6319d5,A8E,Dental Cleaning,Walsh Group,USA,2021-12-18
+6eadc6b1-9623-4b98-8e23-b388b41ee206,A965,Hypertension,Khan LLC,United States,2023-12-28
+6f356fb7-b095-4b67-a6c4-cdd58fdaa729,A403,Hypertension,"Torres, Randolph and Hendrix",USA,2022-09-12
+72337b6a-842a-4294-980c-4d9b1254d897,A144,Diabetes,"Martinez, Alvarez and Jackson",United States,2021-03-09
+72986a8a-b4f9-4470-a328-96e4272c3071,A523,Hypertension,York and Sons,US,2020-07-09
+72a1af3b-a7fb-4d88-995a-ac0852be7ee4,A835,Hypertension,Carr LLC,United States,2020-07-09
+7460f843-48fc-4bf2-838f-bcde089f10ab,A300,Hypertension,"Gray, Reed and Hunt",USA,2023-11-20
+746cb270-553c-4703-b2e5-78ea63fd890a,A1k,Diabetes,"Montoya, Russo and Young",United States,2023-04-09
+75b7c5c8-af8f-4737-bd71-fcbc6d5c18fb,A803,Fracture,Martin and Sons,United States,2020-04-24
+75cc5157-7a85-41d0-bd6b-8dabb45bd49b,A600,Diabetes,Perez Inc,US,2021-07-30
+77ef6070-8122-43a6-80cd-468608eaf0f9,A246,Dental Cleaning,Torres PLC,US,2023-01-05
+7911ffe5-3051-4b50-976a-e75856764e10,A610,Dental Cleaning,Price-Mack,Unitedv,2023-09-14
+7a8d6f7c-b832-4d51-9c9c-f8cdd11c4927,A1P,Dental Cleaning,Vaughan-Smith,US,2021-06-06
+7e46427f-b742-4d0a-879d-f8026f45d081,A100,Dental Cleaning,Wagner-Oneill,USA,2023-03-06
+814af794-923c-4942-a4af-0f23e16b9653,A190,Fracture,Diaz Inc,USA,2024-05-31
+816dc9a7-06a0-4262-b294-83f2943a20ca,A588,Diabetes,Thomas-Ferguson,United States,2024-09-19
+821d3d80-fa3c-47d9-802e-55bebbe313ae,A820,Diabetes,Lewis Inc,USA,2020-11-05
+83015766-16cc-4fa2-a1c2-8f7baaccafc8,A1i,Diabetes,Gross-Burch,United States,2021-05-23
+834e887f-cbd9-4de2-b8e9-35e93b6da206,A119,Diabetes,Diaz-Andrews,US,2024-09-15
+8461f8d8-3eab-4563-94c9-0c300324d0be,A843,Diabetes,Moore PLC,United States,2024-06-28
+8609ffda-3403-49aa-a5ce-aa7268645fba,A885,Dental Cleaning,"Baldwin, Dean and Sanders",US,2024-02-04
+8663cb25-6275-4c92-a1d9-829c33b87c18,A529,Hypertension,"Jefferson, Holt and Johnson",USA,2020-08-06
+87c6c8a5-915d-4492-b273-bcf5ed1e6cf9,A414,Dental Cleaning,Wilson and Sons,UY,2024-01-30
+898825b2-224d-4aea-b51b-8948856a52c5,A681,Fracture,"Anderson, Carter and Wilson",US,2020-08-12
+8a65906c-b698-46a2-8012-3e59e64a7b04,A612,Fracture,"Velez, Butler and Valdez",USA,2023-04-02
+8aa8fbdf-aa7a-4427-8303-7287ca591ed4,A698,Diabetes,Harrington Group,USA,2022-05-03
+8dce513c-db9f-4728-b7c9-003eae1fe807,A8A,Dental Cleaning,Huang LLC,US,2022-06-12
+8dfea03b-469d-41f5-8f05-330c7823a98b,A267,Diabetes,"Mcclure, Scott and Miller",United States,2021-10-02
+8f01d55f-a3e2-43d5-9ce9-da43cc1a2c91,A716,Hypertension,Hodge Group,United States,2021-08-11
+8f765de8-5f84-4631-a3de-fdca7552474f,A970,Dental Cleaning,"Kelly, Gomez and Lewis",USA,2022-11-23
+91da5503-706f-4858-b5fc-425081d5fbdc,A652,Fracture,Martinez-Smith,USA,2020-10-08
+91e388ea-5480-4402-91fe-665737a4cddc,A859,Fracture,Peterson-Young,US,2023-04-09
+924781a6-999d-4efa-84ed-8db84511e9b2,A684,Diabetes,"Barry, Ho and King",US,2023-08-23
+92b5cb6b-39b9-4343-8d82-e525a1569856,A709,Fracture,Moore LLC,Ud,2022-01-13
+9305cba6-91e4-4fc3-995f-a8ef885ef7fb,A744,Fracture,Foster-Suarez,USA,2020-01-26
+9777aaca-c46d-4d66-8224-1f654a1258c8,A365,Fracture,Baker-Brown,US,2024-11-25
+98bfaaf0-0011-4131-a544-2895d341701a,A777,Diabetes,Wolfe Inc,United States,2023-01-07
+9a4fae38-15b6-4cfb-bc2d-4c9e59e7c460,A469,Fracture,"Hall, Day and Wang",UnitedC,2023-10-18
+9b6eb0b0-42bc-4d59-a777-9f60a5df4030,A504,Diabetes,Curtis-Miller,US,2021-04-26
+9ccb1af1-d5d0-4c39-bab9-4216a77af27a,A920,Hypertension,Richards-Wolf,United States,2023-07-08
+9efea67d-e54f-4ced-99b1-e06c7935966d,A565,Hypertension,"Williams, Lozano and Taylor",United States,2024-11-15
+9f59adcd-6ecf-423b-9be9-9026d68e7aa7,A510,Hypertension,Elliott-Smith,US,2022-03-11
+9f7acec8-8428-41a3-ab86-75cb553b15ae,A363,Diabetes,Ball-Barker,US,2022-05-12
+a056306a-9536-45cf-a247-099d1fdbec8c,A485,Dental Cleaning,Mitchell Ltd,United States,2020-12-13
+a09638f6-b144-46bb-900a-be24c34442dd,A721,Diabetes,"Russell, Wright and Alvarez",USA,2024-06-14
+a1046395-c849-429b-84d4-cfe9c1c94d8c,A447,Dental Cleaning,Beck and Sons,United States,2021-05-13
+a1de3b19-7b6f-421a-840f-9021e35f79f6,A571,Diabetes,"Lyons, Baker and Landry",United States,2023-01-01
+a376cf6a-96e3-47be-9cda-5bd12ec5be2c,A602,Diabetes,Cook-Johnson,US,2021-10-17
+a3f9b375-b680-4434-9bac-bd3d580bba30,A737,Fracture,Howell LLC,US,2024-05-10
+a4be030a-d9cd-43b1-9b00-2efb2c3cb4e8,A220,Dental Cleaning,Gibson-Stevens,United States,2024-05-04
+a5e4d001-d260-401b-a2c5-1b38139c95ba,A917,Diabetes,Davis-Guerrero,United States,2021-11-14
+a66a4868-5e9b-476d-9c7b-bf097915cccf,A370,Dental Cleaning,King-Strickland,UM,2020-08-27
+a882f227-72d2-4c7c-afde-0db74b5b5714,A967,Fracture,Ferguson Group,US,2021-11-20
+a8d4c1d9-ed8f-4eff-9eaa-1bbc9432940f,A3Y,Fracture,Nelson Ltd,US,2023-08-31
+aa0ce28e-152a-4b26-9ac4-21767ecf59a4,A4e,Dental Cleaning,Contreras Ltd,Unitedm,2024-06-16
+af566deb-c1f5-4f07-a416-52a9a06e09dc,A7o,Diabetes,Rodgers-Taylor,USA,2024-11-04
+af75ee57-5ad8-4977-b241-f1f2923d90e8,A494,Diabetes,"Larson, Harrison and Green",United States,2021-02-07
+affa121a-1c49-4318-90a3-d5f301f8e176,A463,Hypertension,"Matthews, Solomon and Ross",USA,2020-01-29
+b075a383-8989-4a29-838a-7087d554be61,A765,Dental Cleaning,Brock-Mcgee,United States,2024-01-09
+b2d93589-1397-40b6-a768-e43fc07fe504,A531,Diabetes,Miller and Sons,Uh,2024-05-28
+b50f86b7-baa8-42cf-a427-df98b3e61151,A430,Hypertension,Garcia-Romero,US,2024-09-02
+b5454768-74da-441b-9b0e-aa24c8ba1b02,A239,Hypertension,"Campos, Kemp and Wilson",USA,2022-12-15
+b6963e29-b762-4a55-b5b2-f4b6ab12e0fa,A660,Dental Cleaning,"Mills, Castillo and Smith",USA,2023-02-02
+b7c0c80c-61ba-4ab6-a308-337e30f96e41,A637,Dental Cleaning,Long Inc,USA,2023-03-22
+b8065733-cd9d-4731-9ee7-dbe163eb9b73,A902,Diabetes,Morrow-Peterson,United States,2021-02-06
+bb3e9aa7-9560-4e27-be3f-9db291e02ab1,A523,Diabetes,May-Choi,US,2022-01-03
+bbadc884-bc52-4b2c-b862-80748b125352,A236,Diabetes,"Torres, Lewis and Mcguire",USA,2020-02-01
+bd998bbf-7e31-4480-854d-b4805e2cceb4,A1D,Fracture,Brown-Larsen,USA,2021-03-05
+bdf025d9-c19b-44e0-b93b-9d37a741d66f,A512,Fracture,Hernandez-Reese,USA,2023-08-19
+c442a891-6ee8-4206-a0fa-fb8516ec713a,A3U,Fracture,"Reed, Washington and Rollins",US,2022-12-18
+c495a309-3629-4f7b-bc61-84ed31f26132,A844,Hypertension,Harris-Bowman,USA,2023-12-19
+c4f217d2-a8d6-4162-b2f7-6e7e8e9698f7,A855,Fracture,Schmidt-Moore,United States,2022-10-21
+c617f60b-65c5-4a26-9815-99f75faf00d6,A339,Hypertension,"Morris, Terry and Obrien",US,2021-05-05
+c64e6655-089d-43c3-8400-59afdcad5901,A459,Dental Cleaning,Gibson PLC,USA,2023-09-27
+c673329f-f7c1-4c7c-b940-28d572caf61f,A3s,Fracture,Lang PLC,US,2021-07-01
+c9bfbeb7-52a0-4432-843f-1ac955e4fed8,A675,Fracture,Hines-Johnson,United States,2023-01-27
+cde32248-4b18-4e33-a0b9-856e301f852e,A469,Fracture,Merritt PLC,United States,2021-08-18
+d05a5ee8-e8d3-414e-a952-ef0b1ab5e03d,A925,Dental Cleaning,Acevedo-Higgins,USA,2023-09-04
+d0b3e628-ec80-411f-80c9-db542bdff14c,A836,Hypertension,"Rocha, Lynch and White",United States,2021-08-14
+d2839858-0702-4058-8da9-3d20440c8dea,A469,Hypertension,Hicks-Chapman,USA,2019-12-08
+d3e9ca1e-0124-4bed-b8ee-c41e13b2320a,A825,Dental Cleaning,"Salas, Hooper and Johnson",USA,2023-08-19
+d571f696-b67d-41f6-986c-d21f0d3cefcd,A488,Hypertension,Howard Ltd,United States,2019-12-07
+d68d35a1-8606-462f-b760-82f557e9bdc6,A800,Dental Cleaning,Freeman and Sons,US,2024-08-28
+d7ee518e-8448-4da9-93de-619240a55da7,A638,Diabetes,"Miller, Baker and Ramirez",US,2024-10-04
+d7fb06b9-2533-487f-a32e-89c2f2e8b94b,A790,Diabetes,"Hartman, Cook and Monroe",United States,2023-11-12
+d8d48310-0080-4c2e-b769-73d331153212,A479,Hypertension,Ross Group,USA,2020-05-26
+daee8a2d-2294-4670-b018-aff44385e611,A675,Hypertension,Rivera Ltd,United States,2021-04-02
+db25acb7-8b84-4b3d-9c26-3b05b537bf29,A828,Dental Cleaning,Gonzales-Sanford,USA,2022-05-02
+db9c22f9-7aa4-42a4-8efe-dfdcd2bf86ca,A841,Fracture,Bates LLC,United States,2022-02-28
+e1a396c4-f299-4213-aee5-4c2b364028bd,A571,Hypertension,Thomas Ltd,Uniteda,2022-02-03
+e2e6b707-2254-4970-be4d-3e56bc7f7a16,A454,Hypertension,Anderson-Krause,USA,2020-12-01
+e39a308d-4f17-470c-aabb-b888af99b91c,A479,Dental Cleaning,Neal and Sons,UnitedN,2024-03-28
+e5d4292a-6656-4f81-97d2-8861fb5e26d4,A761,Fracture,Glenn and Sons,US,2020-11-28
+e63c329d-91ed-4033-9b4d-3c31b8307ffe,A7S,Fracture,Nguyen-Hall,United States,2022-01-16
+e7fedc65-0b0d-4329-9901-75f3451dbf0a,A983,Fracture,Williams-Atkinson,United States,2022-12-10
+e8214495-8de9-45ff-9131-2a664a4290e5,A822,Hypertension,Elliott-Cobb,Ut,2020-03-06
+e8901021-afca-4e09-b7d7-99af8d44273c,A305,Dental Cleaning,Delacruz-Cline,USA,2024-02-23
+e8a8edef-30a8-4e74-abe1-c14e459b3bd2,A929,Diabetes,"Mckinney, Cruz and Carrillo",USA,2020-09-17
+e92d2718-3ee1-465e-b5bd-d7a366e46ff2,A5O,Fracture,Ferguson-Kramer,USA,2020-08-05
+ea4b6b6a-c5c7-4737-8a2c-1dd0fb8fde83,A799,Hypertension,"Garrett, Gray and Cook",United States,2023-02-07
+eaa37977-8b6b-4dc2-b9ad-7325e58aefc4,A934,Hypertension,Gomez-Cruz,US,2024-01-11
+eaadf187-1665-446b-a362-63e0bb9ae1ae,A210,Hypertension,Thompson-Alexander,USA,2023-06-19
+eb727e72-0d37-46b3-ac92-273bbfce9042,A740,Dental Cleaning,"Welch, Moore and Lopez",US,2022-01-07
+ebc9773d-a807-4087-ae05-bbd9bf53012a,A201,Fracture,"Harris, Hurst and Gonzales",USA,2022-08-05
+eeeb4cda-5629-421a-9065-8e32721f4756,A798,Diabetes,"Dawson, Jackson and Smith",US,2021-06-08
+eeff0138-7293-46c5-a744-b1856c9684dc,A7Q,Diabetes,Porter Group,USA,2024-07-27
+ef277315-1abc-42fd-b97b-cee44b6db5f9,A3Z,Hypertension,"Price, Cook and Mckee",USA,2024-06-08
+efe9efe0-a455-4137-8f34-32816b638a5c,A643,Fracture,Hubbard-Underwood,USA,2020-04-25
+f2ea578b-2d00-432a-9a9f-5b09a92ef97f,A716,Hypertension,"Davis, Goodman and Johnson",US,2020-12-19
+f3026fd3-06d7-4d7c-b198-4ba301034dcd,A428,Fracture,Donaldson and Sons,USA,2023-09-07
+f3a31957-b0bf-44ec-9640-b5a74220f200,A499,Fracture,Gonzalez-Espinoza,US,2021-12-10
+f49d499c-6282-4ee3-be99-3417467e32d6,A2t,Diabetes,Taylor-Rogers,US,2023-02-01
+f4ddfb1f-0be9-4a18-b54c-4db6b12772ba,A724,Fracture,Brown-Young,USA,2022-07-19
+f5e97a7d-1741-4d09-bcff-90ad2ab4c5d9,A193,Diabetes,Brown-Wilson,USA,2021-08-16
+f89849fc-d4c1-4914-8468-dafdc138c760,A222,Diabetes,Warren LLC,USA,2021-10-26
+f8f4b3d7-5785-47da-9116-30959db374f9,A676,Diabetes,Gallegos-Leon,Uj,2021-12-02
+faa4a7fd-47c8-470b-bfce-be9daae8e52d,A745,Diabetes,Sloan Inc,Uc,2020-05-13
+fadfcd10-090d-4c3c-9ea9-a3923cc15445,A698,Hypertension,"Miller, Wood and Miller",USA,2024-02-06
+fb7be5b4-ed21-4058-8355-e90940cab654,A134,Dental Cleaning,Davis PLC,US,2023-03-02
+fc7ebcc9-2c6e-4802-a345-2ebac95366b1,A376,Diabetes,"Williamson, Wong and Paul",United States,2021-12-13
+fd8ec658-e466-4642-baca-3766d4579ca2,A109,Hypertension,"Stafford, Cruz and Stokes",USA,2023-10-21
+ff1c6a28-42c0-4c8c-b875-be1fc45d7e38,A853,Diabetes,Lin-Lee,US,2022-08-20
