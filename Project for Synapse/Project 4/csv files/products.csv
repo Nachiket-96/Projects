@@ -1,0 +1,7 @@
+Product_ID,Product_Name,Category,Price,Stock_Quantity
+101,Laptop,Electronics,80000,10
+102,Smartphone,Electronics,60000,25
+103,Tablet,Electronics,30000,15
+104,Smartwatch,Accessories,15000,30
+105,Headphones,Accessories,5000,50
+106,Camera,Photography,45000,12
