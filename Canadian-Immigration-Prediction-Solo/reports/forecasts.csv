@@ -1,0 +1,97 @@
+series,model,date,mean,lower,upper
+Canada (total),timesfm,2026-09-01,38923.0,30214.0,47309.0
+Canada (total),timesfm,2026-10-01,37863.0,28144.0,47469.0
+Canada (total),timesfm,2026-11-01,36703.0,26419.0,47196.0
+Canada (total),timesfm,2026-12-01,36176.0,25453.0,47216.0
+Canada (total),timesfm,2027-01-01,36109.0,25200.0,47488.0
+Canada (total),timesfm,2027-02-01,36122.0,24844.0,47838.0
+Canada (total),timesfm,2027-03-01,36137.0,24768.0,48092.0
+Canada (total),timesfm,2027-04-01,36074.0,24385.0,48295.0
+Canada (total),timesfm,2027-05-01,36812.0,24865.0,49113.0
+Canada (total),timesfm,2027-06-01,37152.0,24816.0,49825.0
+Canada (total),timesfm,2027-07-01,36990.0,24469.0,49738.0
+Canada (total),timesfm,2027-08-01,36299.0,23733.0,49190.0
+Canada (total),timesfm,2027-09-01,36239.0,23799.0,49272.0
+Canada (total),timesfm,2027-10-01,35926.0,23158.0,49125.0
+Canada (total),timesfm,2027-11-01,35539.0,22673.0,48759.0
+Canada (total),timesfm,2027-12-01,35559.0,22522.0,48778.0
+India,lightgbm,2026-09-01,8381.0,5506.0,12758.0
+India,lightgbm,2026-10-01,7557.0,4172.0,13690.0
+India,lightgbm,2026-11-01,6152.0,2971.0,12737.0
+India,lightgbm,2026-12-01,5065.0,2186.0,11737.0
+India,lightgbm,2027-01-01,5614.0,2194.0,14365.0
+India,lightgbm,2027-02-01,7195.0,2571.0,20138.0
+India,lightgbm,2027-03-01,7566.0,2489.0,22995.0
+India,lightgbm,2027-04-01,7086.0,2159.0,23254.0
+India,lightgbm,2027-05-01,7419.0,2103.0,26167.0
+India,lightgbm,2027-06-01,8066.0,2136.0,30457.0
+India,lightgbm,2027-07-01,8410.0,2087.0,33882.0
+India,lightgbm,2027-08-01,7717.0,1800.0,33078.0
+India,lightgbm,2027-09-01,7928.0,1743.0,36063.0
+India,lightgbm,2027-10-01,7457.0,1548.0,35916.0
+India,lightgbm,2027-11-01,6648.0,1306.0,33836.0
+India,lightgbm,2027-12-01,5370.0,1000.0,28830.0
+Philippines,sarima,2026-09-01,2423.0,1803.0,3256.0
+Philippines,sarima,2026-10-01,1959.0,1411.0,2719.0
+Philippines,sarima,2026-11-01,1747.0,1243.0,2456.0
+Philippines,sarima,2026-12-01,1806.0,1276.0,2557.0
+Philippines,sarima,2027-01-01,2188.0,1535.0,3117.0
+Philippines,sarima,2027-02-01,2243.0,1566.0,3213.0
+Philippines,sarima,2027-03-01,2304.0,1600.0,3320.0
+Philippines,sarima,2027-04-01,2056.0,1419.0,2978.0
+Philippines,sarima,2027-05-01,2439.0,1675.0,3552.0
+Philippines,sarima,2027-06-01,2436.0,1664.0,3565.0
+Philippines,sarima,2027-07-01,2288.0,1555.0,3366.0
+Philippines,sarima,2027-08-01,1900.0,1285.0,2809.0
+Philippines,sarima,2027-09-01,2107.0,1411.0,3146.0
+Philippines,sarima,2027-10-01,1795.0,1194.0,2698.0
+Philippines,sarima,2027-11-01,1630.0,1078.0,2466.0
+Philippines,sarima,2027-12-01,1695.0,1114.0,2579.0
+"Cameroon, Federal Republic of",lightgbm,2026-09-01,2509.0,1470.0,4283.0
+"Cameroon, Federal Republic of",lightgbm,2026-10-01,2498.0,1173.0,5321.0
+"Cameroon, Federal Republic of",lightgbm,2026-11-01,1931.0,765.0,4876.0
+"Cameroon, Federal Republic of",lightgbm,2026-12-01,1946.0,668.0,5670.0
+"Cameroon, Federal Republic of",lightgbm,2027-01-01,1301.0,393.0,4299.0
+"Cameroon, Federal Republic of",lightgbm,2027-02-01,1653.0,446.0,6125.0
+"Cameroon, Federal Republic of",lightgbm,2027-03-01,1587.0,386.0,6533.0
+"Cameroon, Federal Republic of",lightgbm,2027-04-01,1592.0,351.0,7223.0
+"Cameroon, Federal Republic of",lightgbm,2027-05-01,1755.0,353.0,8726.0
+"Cameroon, Federal Republic of",lightgbm,2027-06-01,2022.0,373.0,10970.0
+"Cameroon, Federal Republic of",lightgbm,2027-07-01,2119.0,360.0,12482.0
+"Cameroon, Federal Republic of",lightgbm,2027-08-01,1576.0,247.0,10047.0
+"Cameroon, Federal Republic of",lightgbm,2027-09-01,2482.0,361.0,17065.0
+"Cameroon, Federal Republic of",lightgbm,2027-10-01,2501.0,338.0,18493.0
+"Cameroon, Federal Republic of",lightgbm,2027-11-01,1886.0,238.0,14957.0
+"Cameroon, Federal Republic of",lightgbm,2027-12-01,1936.0,228.0,16435.0
+"China, People's Republic of",ets,2026-09-01,1943.0,1438.0,2626.0
+"China, People's Republic of",ets,2026-10-01,1872.0,1334.0,2628.0
+"China, People's Republic of",ets,2026-11-01,1518.0,1045.0,2206.0
+"China, People's Republic of",ets,2026-12-01,1413.0,943.0,2118.0
+"China, People's Republic of",ets,2027-01-01,2038.0,1321.0,3145.0
+"China, People's Republic of",ets,2027-02-01,2094.0,1321.0,3321.0
+"China, People's Republic of",ets,2027-03-01,1980.0,1217.0,3222.0
+"China, People's Republic of",ets,2027-04-01,1700.0,1019.0,2834.0
+"China, People's Republic of",ets,2027-05-01,1832.0,1074.0,3128.0
+"China, People's Republic of",ets,2027-06-01,2228.0,1276.0,3888.0
+"China, People's Republic of",ets,2027-07-01,2205.0,1237.0,3932.0
+"China, People's Republic of",ets,2027-08-01,1902.0,1045.0,3463.0
+"China, People's Republic of",ets,2027-09-01,1943.0,1046.0,3609.0
+"China, People's Republic of",ets,2027-10-01,1872.0,989.0,3546.0
+"China, People's Republic of",ets,2027-11-01,1518.0,787.0,2930.0
+"China, People's Republic of",ets,2027-12-01,1413.0,719.0,2777.0
+Nigeria,timesfm,2026-09-01,2505.0,1920.0,3191.0
+Nigeria,timesfm,2026-10-01,2417.0,1756.0,3239.0
+Nigeria,timesfm,2026-11-01,2288.0,1572.0,3174.0
+Nigeria,timesfm,2026-12-01,2200.0,1450.0,3151.0
+Nigeria,timesfm,2027-01-01,2113.0,1348.0,3103.0
+Nigeria,timesfm,2027-02-01,2040.0,1277.0,3061.0
+Nigeria,timesfm,2027-03-01,1995.0,1220.0,3045.0
+Nigeria,timesfm,2027-04-01,1932.0,1148.0,3009.0
+Nigeria,timesfm,2027-05-01,1885.0,1100.0,2961.0
+Nigeria,timesfm,2027-06-01,1832.0,1031.0,2927.0
+Nigeria,timesfm,2027-07-01,1815.0,1009.0,2907.0
+Nigeria,timesfm,2027-08-01,1783.0,966.0,2893.0
+Nigeria,timesfm,2027-09-01,1741.0,962.0,2838.0
+Nigeria,timesfm,2027-10-01,1734.0,936.0,2862.0
+Nigeria,timesfm,2027-11-01,1713.0,921.0,2841.0
+Nigeria,timesfm,2027-12-01,1716.0,932.0,2838.0
