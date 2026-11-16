@@ -1,0 +1,14 @@
+# Data is downloaded / generated, not committed
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/

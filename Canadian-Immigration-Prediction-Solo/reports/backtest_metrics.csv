@@ -1,0 +1,25 @@
+series,model,mae,rmse,mape_pct,interval_coverage_pct,n_forecasts
+Canada (total),ets,5758.79,6883.54,16.97,100.0,96.0
+Canada (total),naive,6326.35,7773.52,18.96,97.92,96.0
+Canada (total),seasonal_naive,6523.02,7763.9,19.96,100.0,96.0
+Canada (total),sarima,7001.26,7953.6,21.63,88.54,96.0
+India,ets,2150.68,2593.22,26.45,96.88,96.0
+India,seasonal_naive,2274.17,2872.87,28.91,91.67,96.0
+India,naive,2545.73,3183.9,33.01,95.83,96.0
+India,sarima,3356.82,3657.7,42.42,81.25,96.0
+Philippines,sarima,472.02,590.3,20.53,84.38,96.0
+Philippines,ets,527.52,651.25,23.46,96.88,96.0
+Philippines,naive,564.95,705.95,25.71,96.88,96.0
+Philippines,seasonal_naive,631.82,754.31,29.39,92.71,96.0
+"Cameroon, Federal Republic of",ets,412.38,506.78,22.91,98.96,96.0
+"Cameroon, Federal Republic of",seasonal_naive,446.77,570.73,24.44,44.79,96.0
+"Cameroon, Federal Republic of",sarima,458.45,556.96,26.54,97.92,96.0
+"Cameroon, Federal Republic of",naive,504.01,641.1,27.16,68.75,96.0
+"China, People's Republic of",ets,479.46,585.94,25.55,93.75,96.0
+"China, People's Republic of",naive,523.02,648.66,27.88,96.88,96.0
+"China, People's Republic of",sarima,556.0,658.04,31.11,69.79,96.0
+"China, People's Republic of",seasonal_naive,608.28,713.59,33.46,95.83,96.0
+Nigeria,naive,317.66,428.13,20.64,89.58,96.0
+Nigeria,ets,322.58,402.29,21.09,100.0,96.0
+Nigeria,seasonal_naive,364.11,444.91,24.58,93.75,96.0
+Nigeria,sarima,567.71,658.4,39.83,89.58,96.0
