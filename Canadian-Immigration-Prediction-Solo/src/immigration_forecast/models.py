@@ -193,3 +193,30 @@ MODELS = {
     cls.name: cls
     for cls in (NaiveForecaster, SeasonalNaiveForecaster, ETSForecaster, SARIMAForecaster)
 }
+
+# Models whose libraries are optional extras: name -> (module, class, pip extra)
+OPTIONAL_MODELS = {
+    "lightgbm": ("models_ml", "LightGBMForecaster", "ml"),
+    "timesfm": ("models_foundation", "TimesFMForecaster", "foundation"),
+}
+_OPTIONAL_IMPORTS = {"lightgbm": "lightgbm", "timesfm": "timesfm"}
+
+
+def get_models(names: list[str]) -> dict:
+    """Name -> model class for the requested models, with a clear error for missing extras."""
+    import importlib
+
+    selected = {}
+    for name in names:
+        if name in MODELS:
+            selected[name] = MODELS[name]
+        elif name in OPTIONAL_MODELS:
+            module, cls, extra = OPTIONAL_MODELS[name]
+            try:
+                importlib.import_module(_OPTIONAL_IMPORTS[name])
+            except ImportError as err:
+                raise ImportError(f"Model {name!r} needs: pip install -e \".[{extra}]\"") from err
+            selected[name] = getattr(importlib.import_module(f"{__package__}.{module}"), cls)
+        else:
+            raise ValueError(f"Unknown model {name!r}. Choose from {sorted(MODELS) + sorted(OPTIONAL_MODELS)}")
+    return selected

@@ -26,9 +26,17 @@ def months_until(y: pd.Series, end: str) -> int:
     return months
 
 
-def run_series(y: pd.Series, forecast_end: str, horizon: int = 12, n_folds: int = 8, step: int = 3) -> SeriesResult:
-    results = backtest(y, MODELS, horizon=horizon, n_folds=n_folds, step=step)
+def run_series(
+    y: pd.Series,
+    forecast_end: str,
+    horizon: int = 12,
+    n_folds: int = 8,
+    step: int = 3,
+    models: dict | None = None,
+) -> SeriesResult:
+    models = models or MODELS
+    results = backtest(y, models, horizon=horizon, n_folds=n_folds, step=step)
     metrics = summarize(results)
     best = metrics.index[0]
-    forecast = MODELS[best]().fit(y).predict(months_until(y, forecast_end))
+    forecast = models[best]().fit(y).predict(months_until(y, forecast_end))
     return SeriesResult(series=str(y.name), metrics=metrics, best_model=best, forecast=forecast)
