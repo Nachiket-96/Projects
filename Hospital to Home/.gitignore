@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local database (recreate with: flask --app app seed)
+instance/
+
+# Local backups
+_backup_*/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
