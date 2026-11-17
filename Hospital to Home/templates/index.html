@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block header %}
+<div class="page-title">Readmission Risk Dashboard</div>
+<div class="page-sub">{{ active }} active patients • {{ high_risk }} need immediate attention</div>
+{% endblock %}
+
+{% block content %}
+<div class="row g-3 mb-3">
+  <div class="col-6 col-lg-3">
+    <div class="card-x kpi">
+      <div class="kpi-icon tone-primary"><i class="bi bi-people-fill"></i></div>
+      <div><div class="kpi-num">{{ total }}</div><div class="kpi-label">Total Patients</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="card-x kpi">
+      <div class="kpi-icon tone-high"><i class="bi bi-exclamation-octagon-fill"></i></div>
+      <div><div class="kpi-num text-danger">{{ high_risk }}</div><div class="kpi-label">High Risk</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="card-x kpi">
+      <div class="kpi-icon tone-medium"><i class="bi bi-exclamation-triangle-fill"></i></div>
+      <div><div class="kpi-num" style="color: var(--medium)">{{ medium_risk }}</div><div class="kpi-label">Medium Risk</div></div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="card-x kpi">
+      <div class="kpi-icon tone-low"><i class="bi bi-shield-check"></i></div>
+      <div><div class="kpi-num" style="color: var(--low)">{{ low_risk }}</div><div class="kpi-label">Low Risk</div></div>
+    </div>
+  </div>
+</div>
+
+{% if total %}
+<div class="card-x mb-3">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <span class="fw-semibold small">Risk distribution</span>
+    <div class="dist-legend">
+      <span><span class="dot bg-risk-HIGH"></span>High {{ (100 * high_risk / total)|round|int }}%</span>
+      <span><span class="dot bg-risk-MEDIUM"></span>Medium {{ (100 * medium_risk / total)|round|int }}%</span>
+      <span><span class="dot bg-risk-LOW"></span>Low {{ (100 * low_risk / total)|round|int }}%</span>
+    </div>
+  </div>
+  <div class="dist-bar">
+    <div class="bg-risk-HIGH" style="width: {{ 100 * high_risk / total }}%"></div>
+    <div class="bg-risk-MEDIUM" style="width: {{ 100 * medium_risk / total }}%"></div>
+    <div class="bg-risk-LOW" style="width: {{ 100 * low_risk / total }}%"></div>
+  </div>
+</div>
+{% endif %}
+
+<div class="row g-3">
+  <div class="col-xl-8">
+    <div class="card-x">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <h5 class="card-title mb-0"><i class="bi bi-list-ul"></i>Patients <span class="text-muted fw-normal small">sorted by risk • {{ patients|length }} shown</span></h5>
+      </div>
+
+      <form class="row g-2 mb-3" method="get" action="{{ url_for('index') }}">
+        <div class="col-md-4 search-wrap">
+          <i class="bi bi-search"></i>
+          <input class="form-control" type="text" name="q" value="{{ q }}" placeholder="Search name or PHN">
+        </div>
+        <div class="col-6 col-md-3">
+          <select class="form-select" name="risk">
+            <option value="" {% if not risk_filter %}selected{% endif %}>All risk levels</option>
+            {% for r in ["HIGH", "MEDIUM", "LOW"] %}
+            <option value="{{ r }}" {% if risk_filter == r %}selected{% endif %}>{{ r|title }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-6 col-md-3">
+          <select class="form-select" name="status">
+            <option value="all" {% if status_filter == 'all' %}selected{% endif %}>All patients</option>
+            <option value="active" {% if status_filter == 'active' %}selected{% endif %}>Active only</option>
+            <option value="discharged" {% if status_filter == 'discharged' %}selected{% endif %}>Discharged only</option>
+          </select>
+        </div>
+        <div class="col-md-2 d-grid">
+          <button class="btn btn-primary" type="submit"><i class="bi bi-funnel me-1"></i>Filter</button>
+        </div>
+      </form>
+
+      <div class="table-responsive">
+        <table class="table ptable">
+          <thead>
+            <tr>
+              <th>Patient</th><th>Age</th><th>Meds</th><th>LOS</th><th>Prior</th><th>Risk</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in patients %}
+            <tr data-href="{{ url_for('patient_detail', pid=p.id) }}">
+              <td>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="avatar" style="background: {{ p.name|avatar_color }}">{{ p.name|initials }}</div>
+                  <div>
+                    <a class="pname text-decoration-none text-reset" href="{{ url_for('patient_detail', pid=p.id) }}">{{ p.name }}</a>
+                    {% if p.high_risk_meds %}<i class="bi bi-capsule meds-flag ms-1" title="On high-risk medications"></i>{% endif %}
+                    <div class="psub">{{ p.phn }}{% for c in (p.conditions|conditions_list)[:2] %} • {{ c }}{% endfor %}</div>
+                  </div>
+                </div>
+              </td>
+              <td>{{ p.age }}</td>
+              <td>{{ p.medication_count }}</td>
+              <td>{{ p.length_of_stay }}d</td>
+              <td>{{ p.previous_admissions }}</td>
+              <td>
+                <span class="risk-chip risk-{{ p.risk_label }}">{{ p.risk_label }} {{ '%.1f'|format(p.risk_score) }}</span>
+                <div class="riskbar mt-1"><div class="bg-risk-{{ p.risk_label }}" style="width: {{ p.risk_score }}%"></div></div>
+              </td>
+              <td>
+                {% if p.discharged_at %}
+                <span class="status status-discharged"><i class="bi bi-house-check"></i>Discharged</span>
+                {% else %}
+                <span class="status status-active"><i class="bi bi-hospital"></i>In hospital</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% else %}
+            <tr><td colspan="7"><div class="empty"><i class="bi bi-person-x"></i>No patients match these filters.</div></td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4">
+    <div class="card-x">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="card-title mb-0"><i class="bi bi-bell"></i>Latest Notifications</h5>
+        <span class="small text-muted d-flex align-items-center gap-2"><span class="live-dot"></span>Live</span>
+      </div>
+      <div id="notif-list" class="feed" data-latest="{{ notifs[0].created_at.isoformat() if notifs else '' }}">
+        {% for n in notifs %}
+        {% set kind = n.title|notif_kind %}
+        <div class="notif notif-{{ kind }}">
+          <div class="notif-icon"><i class="bi {{ {'alert': 'bi-exclamation-triangle-fill', 'discharge': 'bi-house-check-fill', 'plan': 'bi-clipboard2-check-fill'}[kind] }}"></i></div>
+          <div class="flex-grow-1">
+            <div class="notif-title">{{ n.title }}</div>
+            <div class="notif-body">{{ n.body }}</div>
+            <div class="notif-meta">{{ n.created_at|timeago }} • {{ n.audience.replace(',', ', ') }}</div>
+          </div>
+        </div>
+        {% else %}
+        <div id="notif-empty" class="empty"><i class="bi bi-bell-slash"></i>No notifications yet.</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

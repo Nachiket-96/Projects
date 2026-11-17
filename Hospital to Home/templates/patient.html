@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+{% block title %}{{ patient.name }} • Hospital → Home{% endblock %}
+{% block header %}
+<a href="{{ url_for('index') }}" class="d-inline-block mt-3 text-white-50 text-decoration-none small"><i class="bi bi-arrow-left me-1"></i>Back to dashboard</a>
+{% endblock %}
+
+{% block content %}
+{% set conds = patient.conditions|conditions_list %}
+<div class="card-x mb-3">
+  <div class="d-flex flex-wrap align-items-center gap-4">
+    <div class="avatar avatar-lg" style="background: {{ patient.name|avatar_color }}">{{ patient.name|initials }}</div>
+    <div class="flex-grow-1">
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-1">
+        <h3 class="mb-0 fw-bold">{{ patient.name }}</h3>
+        <span class="risk-chip risk-{{ patient.risk_label }}">Risk: {{ patient.risk_label }} ({{ '%.1f'|format(patient.risk_score) }})</span>
+        {% if patient.high_risk_meds %}<span class="chip" style="background: var(--high-soft); color: var(--high)"><i class="bi bi-capsule me-1"></i>High-risk meds</span>{% endif %}
+      </div>
+      <div class="profile-meta mb-2">
+        <span><i class="bi bi-person-vcard"></i>{{ patient.phn }}</span>
+        <span><i class="bi bi-person"></i>{{ patient.age }} y • {{ {'M': 'Male', 'F': 'Female'}.get(patient.sex, patient.sex or '—') }}</span>
+        <span><i class="bi bi-calendar-event"></i>Admitted {{ patient.admitted_at.strftime('%b %d, %Y') }}</span>
+        {% if patient.discharged_at %}
+        <span><i class="bi bi-house-check"></i>Discharged {{ patient.discharged_at.strftime('%b %d, %Y') }}</span>
+        {% endif %}
+      </div>
+      <div>
+        {% for c in conds %}<span class="chip">{{ c }}</span>{% else %}<span class="psub">No chronic conditions recorded</span>{% endfor %}
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center gap-4">
+      <div class="gauge" title="Predicted readmission risk">
+        <svg width="130" height="130" viewBox="0 0 130 130">
+          <circle cx="65" cy="65" r="54" fill="none" stroke="#e6e9f2" stroke-width="12"/>
+          <circle cx="65" cy="65" r="54" fill="none" stroke-width="12" stroke-linecap="round"
+                  class="stroke-{{ patient.risk_label }}"
+                  stroke-dasharray="339.29" stroke-dashoffset="{{ 339.29 * (1 - patient.risk_score / 100) }}"/>
+        </svg>
+        <div class="gauge-center">
+          <div>
+            <div class="gauge-score">{{ '%.1f'|format(patient.risk_score) }}</div>
+            <div class="gauge-label">risk score</div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        {% if not patient.discharged_at %}
+        <form method="post" action="{{ url_for('discharge', pid=patient.id) }}" class="m-0 d-grid">
+          <button class="btn btn-danger" type="submit"><i class="bi bi-box-arrow-right me-1"></i>Mark Discharged</button>
+        </form>
+        {% else %}
+        <span class="btn btn-outline-secondary disabled"><i class="bi bi-house-check me-1"></i>Discharged</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if risk_factors %}
+<div class="card-x mb-3">
+  <h5 class="card-title"><i class="bi bi-exclamation-triangle" style="color: var(--medium)"></i>Contributing Risk Factors</h5>
+  <div class="row g-2">
+    {% for rf in risk_factors %}
+    <div class="col-sm-6 col-lg-3">
+      <div class="factor factor-{{ rf.severity }}">
+        <div class="sev sev-{{ rf.severity }}">{{ rf.severity }}</div>
+        <div class="factor-name">{{ rf.factor }}</div>
+        <div class="factor-value">{{ rf.value }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="row g-3">
+  <div class="col-lg-6">
+    <div class="card-x h-100">
+      <h5 class="card-title"><i class="bi bi-heart-pulse"></i>Clinical Vitals</h5>
+      {% set hr, spo2, sbp = vitals.get('hr'), vitals.get('spo2'), vitals.get('sbp') %}
+      <div class="row g-2 mb-3">
+        <div class="col-4">
+          <div class="vital-tile {% if hr and (hr < 50 or hr > 110) %}abnormal{% endif %}">
+            <div class="lbl">Heart rate</div>
+            <div class="v">{{ '%g'|format(hr) if hr else '—' }}</div><div class="u">bpm</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="vital-tile {% if spo2 and spo2 < 92 %}abnormal{% endif %}">
+            <div class="lbl">SpO₂</div>
+            <div class="v">{{ '%g'|format(spo2) if spo2 else '—' }}</div><div class="u">%</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="vital-tile {% if sbp and sbp < 95 %}abnormal{% endif %}">
+            <div class="lbl">Systolic BP</div>
+            <div class="v">{{ '%g'|format(sbp) if sbp else '—' }}</div><div class="u">mmHg</div>
+          </div>
+        </div>
+      </div>
+      <form id="vitals-form">
+        <div class="row g-2 mb-3">
+          <div class="col">
+            <label class="form-label">HR (bpm)</label>
+            <input class="form-control" type="number" step="any" name="hr" value="{{ '%g'|format(hr) if hr else '' }}">
+          </div>
+          <div class="col">
+            <label class="form-label">SpO₂ (%)</label>
+            <input class="form-control" type="number" step="any" name="spo2" value="{{ '%g'|format(spo2) if spo2 else '' }}">
+          </div>
+          <div class="col">
+            <label class="form-label">SBP (mmHg)</label>
+            <input class="form-control" type="number" step="any" name="sbp" value="{{ '%g'|format(sbp) if sbp else '' }}">
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit"><i class="bi bi-arrow-repeat me-1"></i>Save &amp; Recompute Risk</button>
+        <span id="vitals-status" class="ms-2 save-status"></span>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card-x mb-3">
+      <h5 class="card-title"><i class="bi bi-capsule"></i>Medication Profile</h5>
+      <form id="meds-form">
+        <div class="row g-2 mb-3">
+          <div class="col">
+            <label class="form-label">Total Medications</label>
+            <input class="form-control" type="number" min="0" name="medication_count" value="{{ patient.medication_count }}">
+          </div>
+          <div class="col">
+            <label class="form-label">High-Risk Meds</label>
+            <select class="form-select" name="high_risk_meds">
+              <option value="0" {% if not patient.high_risk_meds %}selected{% endif %}>No</option>
+              <option value="1" {% if patient.high_risk_meds %}selected{% endif %}>Yes (Warfarin, Insulin, etc.)</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit"><i class="bi bi-check2 me-1"></i>Update Medications</button>
+        <span id="meds-status" class="ms-2 save-status"></span>
+      </form>
+    </div>
+
+    <div class="card-x">
+      <h5 class="card-title"><i class="bi bi-hospital"></i>Hospitalization Data</h5>
+      <form id="hosp-form">
+        <div class="row g-2 mb-3">
+          <div class="col">
+            <label class="form-label">Length of Stay (days)</label>
+            <input class="form-control" type="number" min="0" name="length_of_stay" value="{{ patient.length_of_stay }}">
+          </div>
+          <div class="col">
+            <label class="form-label">Previous Admissions (12mo)</label>
+            <input class="form-control" type="number" min="0" name="previous_admissions" value="{{ patient.previous_admissions }}">
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit"><i class="bi bi-check2 me-1"></i>Update History</button>
+        <span id="hosp-status" class="ms-2 save-status"></span>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-7">
+    <div class="card-x h-100">
+      <h5 class="card-title mb-1"><i class="bi bi-clipboard2-pulse"></i>Shared Care Plan</h5>
+      <div class="psub mb-3">Unified record for the care team — saving notifies everyone</div>
+      <textarea id="plan-json" class="form-control mb-3" spellcheck="false">{{ plan|tojson(indent=2) }}</textarea>
+      <button id="save-plan" class="btn btn-success" type="button"><i class="bi bi-send me-1"></i>Save Plan &amp; Notify Team</button>
+      <span id="plan-status" class="ms-2 save-status"></span>
+    </div>
+  </div>
+
+  <div class="col-lg-5">
+    <div class="card-x h-100">
+      <h5 class="card-title"><i class="bi bi-people"></i>Care Team</h5>
+      {% for m in patient.care_team|sort(attribute='role') %}
+      <div class="member">
+        <div class="avatar" style="background: {{ m.name|avatar_color }}">{{ m.name|initials }}</div>
+        <div class="flex-grow-1">
+          <div class="role-tag">{{ m.role }}</div>
+          <div class="fw-semibold">{{ m.name }}</div>
+          <div class="psub">{{ m.org }}</div>
+        </div>
+        <a class="btn btn-sm btn-outline-primary" href="mailto:{{ m.contact }}" title="{{ m.contact }}"><i class="bi bi-envelope"></i></a>
+      </div>
+      {% else %}
+      <div class="empty"><i class="bi bi-person-plus"></i>No care team assigned.</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{
+  "algorithm": "GradientBoostingClassifier",
+  "model_version": "2.1",
+  "sklearn_version": "1.6.1",
+  "trained_on": 1794894702,
+  "train_date": "2026-11-16 23:51:42",
+  "n_samples": 3000,
+  "n_features": 10,
+  "features": [
+    "age",
+    "hr",
+    "spo2",
+    "sbp",
+    "creatinine",
+    "comorb",
+    "medication_count",
+    "high_risk_meds",
+    "length_of_stay",
+    "previous_admissions"
+  ],
+  "positive_rate": 0.2783333333333333,
+  "accuracy": 0.7493333333333333,
+  "baseline_accuracy": 0.7213333333333334,
+  "auc": 0.7524255100867612,
+  "high_threshold_precision": 0.49760765550239233,
+  "high_threshold_recall": 0.49760765550239233,
+  "feature_importance": {
+    "age": 0.11148784950037828,
+    "hr": 0.10367383468890096,
+    "spo2": 0.1322420419650642,
+    "sbp": 0.06423838438811447,
+    "creatinine": 0.07804774469222754,
+    "comorb": 0.08062190707587566,
+    "medication_count": 0.05555923477952787,
+    "high_risk_meds": 0.06327018087902196,
+    "length_of_stay": 0.07517717590421338,
+    "previous_admissions": 0.23568164612667564
+  },
+  "feature_medians": {
+    "age": 67.0,
+    "hr": 85.12207130463025,
+    "spo2": 95.07355195409973,
+    "sbp": 119.90177680424163,
+    "creatinine": 109.55279919904308,
+    "comorb": 2.0,
+    "medication_count": 8.0,
+    "high_risk_meds": 0.0,
+    "length_of_stay": 11.0,
+    "previous_admissions": 1.0
+  },
+  "description": "Enhanced readmission risk model with medications, LOS, and prior admissions"
+}
